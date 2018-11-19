@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	--common-size:51vw;
+}
+.carousel1-container{
+	position:relative;
+	width:50vw;
+	margin:auto;
+	overflow: hidden;
+}
+.carousel-slide{
+	display:inline-flex;
+}
+.carousel-slide img{			/*same as carousel1-container*/
+	width:var(--common-size);
+	height:calc(var(--common-size) * 3/4);
+	display:block;
+}
+button{
+padding:.3em;
+position:absolute;
+background-color: rgba(200,200,200,.4);
+font-size:40px;
+color:white;
+border:none;
+border-radius: .2em;
+opacity:.8;
+}
+
+#prevBtn{
+	top:30vh;
+	left:9em;
+}
+#nextBtn{
+	top:30vh;
+	right:9em;
+}
